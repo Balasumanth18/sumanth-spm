@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("https://static.vecteezy.com/system/resources/previews/032/946/427/non_2x/smiling-children-in-classroom-learning-and-studying-free-photo.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; 
+            font-family: "Playpen Sans", sans-serif;
+            font-size: larger;
+        }
+        button {
+            border-radius: 40px;
+            padding: 8px 25px;
+            border: none;
+            font-weight: bold;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-family: "Playpen Sans", sans-serif;
+            font-size: medium;
+        }
+        button:hover {
+            animation: bubble 0.4s ease-out;
+            background-color: lightpink;
+            color: white;
+
+
+        }
+        @keyframes bubble {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Welcome to student Personal Manager</h1>
+    </center>
+    <h3>About</h3>
+    <p>"Congratulations on your new position with this organisation. I understand your skills are an excellent fit for leading our team and setting high standards. We look forward to working together on a variety of projects under your direction. Welcome again to the team."</p>
+    <p>Hello and welcome to our class! I am very excited to begin this educational adventure with each of you. We will work together to establish a welcoming environment in which everyone's ideas are valued and celebrated. Your presence enriches our classroom community, and I look forward to getting to know every one of you</p>
+    <center>
+        <a href="{{url_for('register')}}"><button>SignUp</button></a>
+        <a href="{{url_for('login')}}"><button>Login</button></a>
+    </center>
+</body>
+</html>

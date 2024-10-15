@@ -1,0 +1,25 @@
+{% extends 'panel.html' %}
+{% block addcss %}
+    <title>Book Input Form</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='add.css')}}">
+{% endblock %}
+{% block content %}
+<body>
+    <div class="form-container">
+        <h2>Notes</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="title">Created at:{{note_data[3]}}</label>
+                <label for="title">Book Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter book title" value="{{note_data[1]}}">
+            </div>
+            <div class="input-group">
+                <label for="content">Book Content:</label>
+                <textarea id="content" name="content" placeholder="Enter book content or description" rows="6">{{note_data[2]}}</textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+{% endblock %}

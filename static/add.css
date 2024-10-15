@@ -1,0 +1,70 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background-image: url("https://marketplace.canva.com/EAFm9cdFi94/1/0/1600w/canva-bright-cartoon-green-and-brown-school-books-pattern-desktop-wallpaper-yBscg6QYXac.jpg");
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.form-container {
+background-image: url('https://media.tenor.com/eSK4SyEXPr4AAAAM/anime-himmel.gif');
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 400px;
+margin-top: 10%;
+margin-left: 35%;
+}
+h2 {
+text-align: center;
+margin-bottom: 20px;
+color: #333;
+}
+.input-group {
+margin-bottom: 15px;
+}
+
+.input-group label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+color: #333;
+}
+
+.input-group input, 
+.input-group textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+border-color: #3498db;
+outline: none;
+}
+
+button {
+width: 100%;
+padding: 12px;
+border: none;
+background-color: #3498db;
+color: white;
+font-size: 16px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+button:hover {
+background-color: #2980b9;
+}
